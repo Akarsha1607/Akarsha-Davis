@@ -1,7 +1,7 @@
 import os
 import math
 
-def read_pdb_file(file_path):
+def read_coordinates(file_path):
     coordinates = []
     with open(file_path, 'r') as file:
         for line in file:
@@ -105,7 +105,7 @@ def write_xyz_file(coordinates, output_file):
     print(f"XYZ file created successfully: {output_file}")
 
 
-def find_atom_by_id(coordinates, atom_id):
+def atom_ids(coordinates, atom_id):
     for atom in coordinates:
         if atom[0] == atom_id:  
             return atom
@@ -114,10 +114,10 @@ def find_atom_by_id(coordinates, atom_id):
 def compare_properties(file1_coordinates, atom_id1, file2_coordinates=None, atom_id2=None):
     if file2_coordinates and atom_id2:
         if len(atom_id1) == 2 and len(atom_id2) == 2:
-            atom1_1 = find_atom_by_id(file1_coordinates, atom_id1[0])
-            atom2_1 = find_atom_by_id(file1_coordinates, atom_id1[1])
-            atom1_2 = find_atom_by_id(file2_coordinates, atom_id2[0])
-            atom2_2 = find_atom_by_id(file2_coordinates, atom_id2[1])
+            atom1_1 = atom_ids(file1_coordinates, atom_id1[0])
+            atom2_1 = atom_ids(file1_coordinates, atom_id1[1])
+            atom1_2 = atom_ids(file2_coordinates, atom_id2[0])
+            atom2_2 = atom_ids(file2_coordinates, atom_id2[1])
 
             if atom1_1 and atom2_1 and atom1_2 and atom2_2:
                 bond_length_1 = calculate_bond_length(atom1_1, atom2_1)
@@ -131,12 +131,12 @@ def compare_properties(file1_coordinates, atom_id1, file2_coordinates=None, atom
                     print("No significant bond length difference")
         
         elif len(atom_id1) == 3 and len(atom_id2) == 3:
-            atom1_1 = find_atom_by_id(file1_coordinates, atom_id1[0])
-            atom2_1 = find_atom_by_id(file1_coordinates, atom_id1[1])
-            atom3_1 = find_atom_by_id(file1_coordinates, atom_id1[2])
-            atom1_2 = find_atom_by_id(file2_coordinates, atom_id2[0])
-            atom2_2 = find_atom_by_id(file2_coordinates, atom_id2[1])
-            atom3_2 = find_atom_by_id(file2_coordinates, atom_id2[2])
+            atom1_1 = atom_ids(file1_coordinates, atom_id1[0])
+            atom2_1 = atom_ids(file1_coordinates, atom_id1[1])
+            atom3_1 = atom_ids(file1_coordinates, atom_id1[2])
+            atom1_2 = atom_ids(file2_coordinates, atom_id2[0])
+            atom2_2 = atom_ids(file2_coordinates, atom_id2[1])
+            atom3_2 = atom_ids(file2_coordinates, atom_id2[2])
 
             if atom1_1 and atom2_1 and atom3_1 and atom1_2 and atom2_2 and atom3_2:
                 bond_angle_1 = calculate_bond_angle(atom1_1, atom2_1, atom3_1)
@@ -150,14 +150,14 @@ def compare_properties(file1_coordinates, atom_id1, file2_coordinates=None, atom
                     print("No significant bond angle difference")
             
         elif len(atom_id1) == 4 and len(atom_id2) == 4:
-            atom1_1 = find_atom_by_id(file1_coordinates, atom_id1[0])
-            atom2_1 = find_atom_by_id(file1_coordinates, atom_id1[1])
-            atom3_1 = find_atom_by_id(file1_coordinates, atom_id1[2])
-            atom4_1 = find_atom_by_id(file1_coordinates, atom_id1[3])
-            atom1_2 = find_atom_by_id(file2_coordinates, atom_id2[0])
-            atom2_2 = find_atom_by_id(file2_coordinates, atom_id2[1])
-            atom3_2 = find_atom_by_id(file2_coordinates, atom_id2[2])
-            atom4_2 = find_atom_by_id(file2_coordinates, atom_id2[3])
+            atom1_1 = atom_ids(file1_coordinates, atom_id1[0])
+            atom2_1 = atom_ids(file1_coordinates, atom_id1[1])
+            atom3_1 = atom_ids(file1_coordinates, atom_id1[2])
+            atom4_1 = atom_ids(file1_coordinates, atom_id1[3])
+            atom1_2 = atom_ids(file2_coordinates, atom_id2[0])
+            atom2_2 = atom_ids(file2_coordinates, atom_id2[1])
+            atom3_2 = atom_ids(file2_coordinates, atom_id2[2])
+            atom4_2 = atom_ids(file2_coordinates, atom_id2[3])
 
             if atom1_1 and atom2_1 and atom3_1 and atom4_1 and atom1_2 and atom2_2 and atom3_2 and atom4_2:
                 dihedral_1 = calculate_dihedral_angle(atom1_1, atom2_1, atom3_1, atom4_1)
@@ -171,25 +171,25 @@ def compare_properties(file1_coordinates, atom_id1, file2_coordinates=None, atom
                     print("No significant dihedral angle difference")
     else:
         if len(atom_id1) == 2:
-            atom1_1 = find_atom_by_id(file1_coordinates, atom_id1[0])
-            atom2_1 = find_atom_by_id(file1_coordinates, atom_id1[1])
+            atom1_1 = atom_ids(file1_coordinates, atom_id1[0])
+            atom2_1 = atom_ids(file1_coordinates, atom_id1[1])
 
             if atom1_1 and atom2_1:
                 bond_length_1 = calculate_bond_length(atom1_1, atom2_1)
                 print(f"Bond Length for atoms in File 1: {bond_length_1:.2f}°")
         elif len(atom_id1) == 3:
-            atom1_1 = find_atom_by_id(file1_coordinates, atom_id1[0])
-            atom2_1 = find_atom_by_id(file1_coordinates, atom_id1[1])
-            atom3_1 = find_atom_by_id(file1_coordinates, atom_id1[2])
+            atom1_1 = atom_ids(file1_coordinates, atom_id1[0])
+            atom2_1 = atom_ids(file1_coordinates, atom_id1[1])
+            atom3_1 = atom_ids(file1_coordinates, atom_id1[2])
 
             if atom1_1 and atom2_1 and atom3_1:
                 bond_angle_1 = calculate_bond_angle(atom1_1, atom2_1, atom3_1)
                 print(f"Bond Angle for atoms in File 1: {bond_angle_1:.1f}°")
         elif len(atom_id1) == 4:
-            atom1_1 = find_atom_by_id(file1_coordinates, atom_id1[0])
-            atom2_1 = find_atom_by_id(file1_coordinates, atom_id1[1])
-            atom3_1 = find_atom_by_id(file1_coordinates, atom_id1[2])
-            atom4_1 = find_atom_by_id(file1_coordinates, atom_id1[3])
+            atom1_1 = atom_ids(file1_coordinates, atom_id1[0])
+            atom2_1 = atom_ids(file1_coordinates, atom_id1[1])
+            atom3_1 = atom_ids(file1_coordinates, atom_id1[2])
+            atom4_1 = atom_ids(file1_coordinates, atom_id1[3])
 
             if atom1_1 and atom2_1 and atom3_1 and atom4_1:
                 dihedral_1 = calculate_dihedral_angle(atom1_1, atom2_1, atom3_1, atom4_1)
@@ -201,7 +201,7 @@ def input_part():
         print("The file path is incorrect.")
         return
 
-    file1_coordinates = read_pdb_file(file1_path)
+    file1_coordinates = read_coordinates(file1_path)
     connectivity1 = read_connectivity(file1_path)
     print_connectivity_and_coordinates(file1_coordinates, connectivity1)
 
@@ -216,7 +216,7 @@ def input_part():
             print("The second file path is incorrect.")
             return
         
-        file2_coordinates = read_pdb_file(file2_path)
+        file2_coordinates = read_coordinates(file2_path)
         connectivity2 = read_connectivity(file2_path)
         print_connectivity_and_coordinates(file2_coordinates, connectivity2)
 
