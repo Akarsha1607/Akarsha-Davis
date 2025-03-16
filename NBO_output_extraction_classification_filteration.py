@@ -1,7 +1,8 @@
+import re
+#Extraction of second order pertubation theory analysis
 def extract_perturbation(log_file):
     with open(log_file, "r", encoding="utf-8") as file:
         lines = file.readlines()
-
     perturbation_data = []
     record = False
 
@@ -24,18 +25,17 @@ def extract_perturbation(log_file):
     print(f"Perturbation data saved to {output_file}")
     return perturbation_data
 
+#Extraction of occupancy data
 def extract_occupancy(filename):
     occupancy_data = []
     record = False
 
     with open(filename, "r", encoding="utf-8") as file:
         lines = file.readlines()
-
     for line in lines:
         if "(Occupancy)" in line:
             record = True 
             continue
-        
         if record:
             if "81." in line: 
                 break
@@ -45,7 +45,6 @@ def extract_occupancy(filename):
     output_file = filename.replace(".log", "_Occupancy.txt")
     with open(output_file, "w", encoding="utf-8") as out_occ:
         out_occ.writelines("\n".join(occupancy_data))
-
     print(f"Occupancy data saved to {output_file}")
     return occupancy_data 
 
@@ -57,6 +56,7 @@ bond_types = {
     "LP": "n"
 }
 
+#Classification from pertubation data
 def classify_interactions(perturbation_data, log_file):
     classified_data = {
         "nσ": [], "nσ*": [], "nπ": [], "nπ*": [],
@@ -65,7 +65,7 @@ def classify_interactions(perturbation_data, log_file):
 
     for line in perturbation_data:
         words = line.split()
-        if len(words) < 5:
+        if len(words) < 6:
             continue  
         donors = []
         for key in bond_types.keys():
@@ -73,10 +73,11 @@ def classify_interactions(perturbation_data, log_file):
                 donors.append(bond_types[key])
         for donor in donors:
             for acceptor in donors:
-                if donor != acceptor: 
-                    interaction = f"{donor}{acceptor}"
-                    if interaction in classified_data:
-                        classified_data[interaction].append(line)
+                if donor == acceptor:
+                    continue 
+                interaction = f"{donor}{acceptor}"
+                if interaction in classified_data:
+                    classified_data[interaction].append(line)
 
     classification_file = log_file.replace(".log", "_Classification.txt")
     with open(classification_file, "w", encoding="utf-8") as out_class:
@@ -85,31 +86,32 @@ def classify_interactions(perturbation_data, log_file):
                 out_class.write(f" {category} Interactions \n")
                 out_class.writelines("\n".join(interactions))
                 out_class.write("\n\n")  
-
     print(f"Classified interactions saved to {classification_file}")
     return classified_data
 
-def filter_interactions_by_indices(classified_data):
-    atom_index = input("Enter the atom no. to find all interactions: ").strip()
-    print(f"\nInteraction involving atom {atom_index}:")
+#Filtering datas for finding the interactions an atom is involved in
+def filter_interactions_by_atom_index(classified_data):
+    atom_index = input("Enter the atom index to find all interactions: ").strip()
+    print(f"\nInteractions involving atom index are: {atom_index}:")
     found = False
 
     for category, interactions in classified_data.items():
         for interaction in interactions:
-            if atom_index in interaction:
-                parts = interaction.split()
-                energy = parts[-3]
-                output_interaction = " ".join(parts[:-3])
+            clean_interaction = " ".join(interaction.split())
+            if re.search(rf"\b{atom_index}\b", clean_interaction):
+                words = interaction.split()
+                energy = words[-3]
+                output_interaction = " ".join(words[:-3])
                 print(f"{category}: {output_interaction} {energy} kcal")
                 found = True
     if not found:
-        print("No interactions found for the given atom index")
+        print("No interactions were found for the given atom index")
 
 log_file = input("Enter the Gaussian log file: ").strip()
 perturbation_data = extract_perturbation(log_file)
 occupancy_data = extract_occupancy(log_file)
 classified_data = classify_interactions(perturbation_data, log_file)
-filter_interactions_by_indices(classified_data)
+filter_interactions_by_atom_index(classified_data)
 
 
 
