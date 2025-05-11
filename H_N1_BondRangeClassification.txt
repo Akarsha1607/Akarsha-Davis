@@ -1,0 +1,245 @@
+nσ* Short Range Interactions
+14.  LP  (  1)  N  11  49.  BD*(  1)  C  1-  C  2  0.38  2 bonds  short range
+14.  LP  (  1)  N  11  51.  BD*(  1)  C  1-  C  6  2.78  2 bonds  short range
+14.  LP  (  1)  N  11  52.  BD*(  1)  C  1-  C  20  0.10  2 bonds  short range
+14.  LP  (  1)  N  11  58.  BD*(  1)  C  4-  C  5  0.19  2 bonds  short range
+14.  LP  (  1)  N  11  60.  BD*(  1)  C  5-  C  6  7.64  2 bonds  short range
+14.  LP  (  1)  N  11  62.  BD*(  1)  C  5-  H  10  0.19  2 bonds  short range
+14.  LP  (  1)  N  11  66.  BD*(  1)  C  12-  H  13  9.23  2 bonds  short range
+14.  LP  (  1)  N  11  67.  BD*(  1)  C  12-  H  14  2.56  2 bonds  short range
+14.  LP  (  1)  N  11  68.  BD*(  1)  C  12-  H  15  0.91  2 bonds  short range
+14.  LP  (  1)  N  11  69.  BD*(  1)  C  16-  H  17  8.48  2 bonds  short range
+14.  LP  (  1)  N  11  70.  BD*(  1)  C  16-  H  18  2.41  2 bonds  short range
+14.  LP  (  1)  N  11  71.  BD*(  1)  C  16-  H  19  0.90  2 bonds  short range
+14.  LP  (  1)  N  11  72.  BD*(  1)  C  20-  H  21  0.30  2 bonds  short range
+14.  LP  (  1)  N  11  75.  BD*(  1)  C  23-  H  24  0.35  2 bonds  short range
+Total nσ* short range energy: 36.42 kcal
+
+nσ* Long Range Interactions
+15.  LP  (  1)  O  28  74.  BD*(  1)  C  20-  C  23  0.28  4 bonds  long range
+15.  LP  (  1)  O  28  77.  BD*(  1)  C  23-  C  26  1.36  4 bonds  long range
+15.  LP  (  1)  O  28  78.  BD*(  1)  C  26-  H  27  0.57  4 bonds  long range
+15.  LP  (  1)  O  28  79.  BD*(  1)  C  26-  O  28  0.20  4 bonds  long range
+16.  LP  (  2)  O  28  52.  BD*(  1)  C  1-  C  20  0.52  5 bonds  long range
+16.  LP  (  2)  O  28  74.  BD*(  1)  C  20-  C  23  0.16  5 bonds  long range
+16.  LP  (  2)  O  28  76.  BD*(  1)  C  23-  H  25  0.12  5 bonds  long range
+16.  LP  (  2)  O  28  77.  BD*(  1)  C  23-  C  26  21.66  5 bonds  long range
+16.  LP  (  2)  O  28  78.  BD*(  1)  C  26-  H  27  25.97  5 bonds  long range
+Total nσ* long range energy: 50.84 kcal
+
+nπ* Short Range Interactions
+14.  LP  (  1)  N  11  61.  BD*(  2)  C  5-  C  6  9.09  2 bonds  short range
+Total nπ* short range energy: 9.09 kcal
+
+σσ* Short Range Interactions
+17.  BD  (  1)  C  1-  C  2  51.  BD*(  1)  C  1-  C  6  1.17  0 bonds  short range
+17.  BD  (  1)  C  1-  C  2  52.  BD*(  1)  C  1-  C  20  0.58  0 bonds  short range
+17.  BD  (  1)  C  1-  C  2  53.  BD*(  1)  C  2-  C  3  1.12  0 bonds  short range
+17.  BD  (  1)  C  1-  C  2  54.  BD*(  1)  C  2-  H  7  0.37  0 bonds  short range
+17.  BD  (  1)  C  1-  C  2  57.  BD*(  1)  C  3-  H  8  2.24  0 bonds  short range
+17.  BD  (  1)  C  1-  C  2  63.  BD*(  1)  C  6-  N  11  3.88  0 bonds  short range
+17.  BD  (  1)  C  1-  C  2  72.  BD*(  1)  C  20-  H  21  0.38  0 bonds  short range
+17.  BD  (  1)  C  1-  C  2  73.  BD*(  1)  C  20-  H  22  0.61  0 bonds  short range
+17.  BD  (  1)  C  1-  C  2  74.  BD*(  1)  C  20-  C  23  0.29  0 bonds  short range
+19.  BD  (  1)  C  1-  C  6  49.  BD*(  1)  C  1-  C  2  0.96  0 bonds  short range
+19.  BD  (  1)  C  1-  C  6  52.  BD*(  1)  C  1-  C  20  0.44  0 bonds  short range
+19.  BD  (  1)  C  1-  C  6  54.  BD*(  1)  C  2-  H  7  2.58  0 bonds  short range
+19.  BD  (  1)  C  1-  C  6  60.  BD*(  1)  C  5-  C  6  1.03  0 bonds  short range
+19.  BD  (  1)  C  1-  C  6  62.  BD*(  1)  C  5-  H  10  2.53  0 bonds  short range
+19.  BD  (  1)  C  1-  C  6  63.  BD*(  1)  C  6-  N  11  0.47  0 bonds  short range
+19.  BD  (  1)  C  1-  C  6  64.  BD*(  1)  N  11-  C  12  2.37  0 bonds  short range
+19.  BD  (  1)  C  1-  C  6  65.  BD*(  1)  N  11-  C  16  0.21  0 bonds  short range
+19.  BD  (  1)  C  1-  C  6  72.  BD*(  1)  C  20-  H  21  0.86  0 bonds  short range
+20.  BD  (  1)  C  1-  C  20  49.  BD*(  1)  C  1-  C  2  0.52  0 bonds  short range
+20.  BD  (  1)  C  1-  C  20  51.  BD*(  1)  C  1-  C  6  0.48  0 bonds  short range
+20.  BD  (  1)  C  1-  C  20  53.  BD*(  1)  C  2-  C  3  2.57  0 bonds  short range
+20.  BD  (  1)  C  1-  C  20  54.  BD*(  1)  C  2-  H  7  0.42  0 bonds  short range
+20.  BD  (  1)  C  1-  C  20  60.  BD*(  1)  C  5-  C  6  3.19  0 bonds  short range
+20.  BD  (  1)  C  1-  C  20  63.  BD*(  1)  C  6-  N  11  0.18  0 bonds  short range
+20.  BD  (  1)  C  1-  C  20  72.  BD*(  1)  C  20-  H  21  0.12  0 bonds  short range
+20.  BD  (  1)  C  1-  C  20  73.  BD*(  1)  C  20-  H  22  0.19  0 bonds  short range
+20.  BD  (  1)  C  1-  C  20  74.  BD*(  1)  C  20-  C  23  0.21  0 bonds  short range
+20.  BD  (  1)  C  1-  C  20  75.  BD*(  1)  C  23-  H  24  0.15  0 bonds  short range
+20.  BD  (  1)  C  1-  C  20  76.  BD*(  1)  C  23-  H  25  0.13  0 bonds  short range
+20.  BD  (  1)  C  1-  C  20  77.  BD*(  1)  C  23-  C  26  1.87  0 bonds  short range
+21.  BD  (  1)  C  2-  C  3  49.  BD*(  1)  C  1-  C  2  1.22  1 bonds  short range
+21.  BD  (  1)  C  2-  C  3  52.  BD*(  1)  C  1-  C  20  3.39  1 bonds  short range
+21.  BD  (  1)  C  2-  C  3  54.  BD*(  1)  C  2-  H  7  0.45  1 bonds  short range
+21.  BD  (  1)  C  2-  C  3  55.  BD*(  1)  C  3-  C  4  0.99  1 bonds  short range
+21.  BD  (  1)  C  2-  C  3  57.  BD*(  1)  C  3-  H  8  0.47  1 bonds  short range
+21.  BD  (  1)  C  2-  C  3  59.  BD*(  1)  C  4-  H  9  2.44  1 bonds  short range
+21.  BD  (  1)  C  2-  C  3  63.  BD*(  1)  C  6-  N  11  0.16  1 bonds  short range
+22.  BD  (  1)  C  2-  H  7  49.  BD*(  1)  C  1-  C  2  0.19  1 bonds  short range
+22.  BD  (  1)  C  2-  H  7  51.  BD*(  1)  C  1-  C  6  5.17  1 bonds  short range
+22.  BD  (  1)  C  2-  H  7  52.  BD*(  1)  C  1-  C  20  0.24  1 bonds  short range
+22.  BD  (  1)  C  2-  H  7  53.  BD*(  1)  C  2-  C  3  0.12  1 bonds  short range
+22.  BD  (  1)  C  2-  H  7  55.  BD*(  1)  C  3-  C  4  3.75  1 bonds  short range
+22.  BD  (  1)  C  2-  H  7  57.  BD*(  1)  C  3-  H  8  0.62  1 bonds  short range
+23.  BD  (  1)  C  3-  C  4  52.  BD*(  1)  C  1-  C  20  0.12  2 bonds  short range
+23.  BD  (  1)  C  3-  C  4  53.  BD*(  1)  C  2-  C  3  0.99  2 bonds  short range
+23.  BD  (  1)  C  3-  C  4  54.  BD*(  1)  C  2-  H  7  2.40  2 bonds  short range
+23.  BD  (  1)  C  3-  C  4  57.  BD*(  1)  C  3-  H  8  0.47  2 bonds  short range
+23.  BD  (  1)  C  3-  C  4  58.  BD*(  1)  C  4-  C  5  1.05  2 bonds  short range
+23.  BD  (  1)  C  3-  C  4  59.  BD*(  1)  C  4-  H  9  0.45  2 bonds  short range
+23.  BD  (  1)  C  3-  C  4  62.  BD*(  1)  C  5-  H  10  2.36  2 bonds  short range
+23.  BD  (  1)  C  3-  C  4  63.  BD*(  1)  C  6-  N  11  0.13  2 bonds  short range
+25.  BD  (  1)  C  3-  H  8  49.  BD*(  1)  C  1-  C  2  4.09  2 bonds  short range
+25.  BD  (  1)  C  3-  H  8  53.  BD*(  1)  C  2-  C  3  0.14  2 bonds  short range
+25.  BD  (  1)  C  3-  H  8  54.  BD*(  1)  C  2-  H  7  0.61  2 bonds  short range
+25.  BD  (  1)  C  3-  H  8  55.  BD*(  1)  C  3-  C  4  0.12  2 bonds  short range
+25.  BD  (  1)  C  3-  H  8  58.  BD*(  1)  C  4-  C  5  3.83  2 bonds  short range
+25.  BD  (  1)  C  3-  H  8  59.  BD*(  1)  C  4-  H  9  0.59  2 bonds  short range
+28.  BD  (  1)  C  5-  C  6  51.  BD*(  1)  C  1-  C  6  1.35  2 bonds  short range
+28.  BD  (  1)  C  5-  C  6  52.  BD*(  1)  C  1-  C  20  3.60  2 bonds  short range
+28.  BD  (  1)  C  5-  C  6  58.  BD*(  1)  C  4-  C  5  1.19  2 bonds  short range
+28.  BD  (  1)  C  5-  C  6  59.  BD*(  1)  C  4-  H  9  2.22  2 bonds  short range
+28.  BD  (  1)  C  5-  C  6  62.  BD*(  1)  C  5-  H  10  0.37  2 bonds  short range
+28.  BD  (  1)  C  5-  C  6  63.  BD*(  1)  C  6-  N  11  0.30  2 bonds  short range
+28.  BD  (  1)  C  5-  C  6  65.  BD*(  1)  N  11-  C  16  0.83  2 bonds  short range
+30.  BD  (  1)  C  5-  H  10  51.  BD*(  1)  C  1-  C  6  5.07  2 bonds  short range
+30.  BD  (  1)  C  5-  H  10  55.  BD*(  1)  C  3-  C  4  3.74  2 bonds  short range
+30.  BD  (  1)  C  5-  H  10  58.  BD*(  1)  C  4-  C  5  0.14  2 bonds  short range
+30.  BD  (  1)  C  5-  H  10  59.  BD*(  1)  C  4-  H  9  0.61  2 bonds  short range
+30.  BD  (  1)  C  5-  H  10  60.  BD*(  1)  C  5-  C  6  0.20  2 bonds  short range
+30.  BD  (  1)  C  5-  H  10  63.  BD*(  1)  C  6-  N  11  0.43  2 bonds  short range
+30.  BD  (  1)  C  5-  H  10  64.  BD*(  1)  N  11-  C  12  0.16  2 bonds  short range
+30.  BD  (  1)  C  5-  H  10  67.  BD*(  1)  C  12-  H  14  0.35  2 bonds  short range
+31.  BD  (  1)  C  6-  N  11  49.  BD*(  1)  C  1-  C  2  2.30  1 bonds  short range
+31.  BD  (  1)  C  6-  N  11  51.  BD*(  1)  C  1-  C  6  0.35  1 bonds  short range
+31.  BD  (  1)  C  6-  N  11  58.  BD*(  1)  C  4-  C  5  1.63  1 bonds  short range
+31.  BD  (  1)  C  6-  N  11  60.  BD*(  1)  C  5-  C  6  0.32  1 bonds  short range
+31.  BD  (  1)  C  6-  N  11  62.  BD*(  1)  C  5-  H  10  0.18  1 bonds  short range
+31.  BD  (  1)  C  6-  N  11  64.  BD*(  1)  N  11-  C  12  0.14  1 bonds  short range
+31.  BD  (  1)  C  6-  N  11  65.  BD*(  1)  N  11-  C  16  0.17  1 bonds  short range
+31.  BD  (  1)  C  6-  N  11  67.  BD*(  1)  C  12-  H  14  1.00  1 bonds  short range
+31.  BD  (  1)  C  6-  N  11  68.  BD*(  1)  C  12-  H  15  0.33  1 bonds  short range
+31.  BD  (  1)  C  6-  N  11  70.  BD*(  1)  C  16-  H  18  1.12  1 bonds  short range
+31.  BD  (  1)  C  6-  N  11  71.  BD*(  1)  C  16-  H  19  0.27  1 bonds  short range
+32.  BD  (  1)  N  11-  C  12  51.  BD*(  1)  C  1-  C  6  2.65  2 bonds  short range
+32.  BD  (  1)  N  11-  C  12  52.  BD*(  1)  C  1-  C  20  0.11  2 bonds  short range
+32.  BD  (  1)  N  11-  C  12  63.  BD*(  1)  C  6-  N  11  0.31  2 bonds  short range
+32.  BD  (  1)  N  11-  C  12  65.  BD*(  1)  N  11-  C  16  0.14  2 bonds  short range
+32.  BD  (  1)  N  11-  C  12  69.  BD*(  1)  C  16-  H  17  0.11  2 bonds  short range
+32.  BD  (  1)  N  11-  C  12  70.  BD*(  1)  C  16-  H  18  0.25  2 bonds  short range
+32.  BD  (  1)  N  11-  C  12  71.  BD*(  1)  C  16-  H  19  1.46  2 bonds  short range
+33.  BD  (  1)  N  11-  C  16  51.  BD*(  1)  C  1-  C  6  0.25  2 bonds  short range
+33.  BD  (  1)  N  11-  C  16  52.  BD*(  1)  C  1-  C  20  0.11  2 bonds  short range
+33.  BD  (  1)  N  11-  C  16  60.  BD*(  1)  C  5-  C  6  1.13  2 bonds  short range
+33.  BD  (  1)  N  11-  C  16  63.  BD*(  1)  C  6-  N  11  0.28  2 bonds  short range
+33.  BD  (  1)  N  11-  C  16  66.  BD*(  1)  C  12-  H  13  0.11  2 bonds  short range
+33.  BD  (  1)  N  11-  C  16  67.  BD*(  1)  C  12-  H  14  0.28  2 bonds  short range
+33.  BD  (  1)  N  11-  C  16  68.  BD*(  1)  C  12-  H  15  1.59  2 bonds  short range
+40.  BD  (  1)  C  20-  H  21  49.  BD*(  1)  C  1-  C  2  0.22  1 bonds  short range
+40.  BD  (  1)  C  20-  H  21  51.  BD*(  1)  C  1-  C  6  4.93  1 bonds  short range
+40.  BD  (  1)  C  20-  H  21  52.  BD*(  1)  C  1-  C  20  0.13  1 bonds  short range
+40.  BD  (  1)  C  20-  H  21  53.  BD*(  1)  C  2-  C  3  0.30  1 bonds  short range
+40.  BD  (  1)  C  20-  H  21  75.  BD*(  1)  C  23-  H  24  2.94  1 bonds  short range
+40.  BD  (  1)  C  20-  H  21  76.  BD*(  1)  C  23-  H  25  0.23  1 bonds  short range
+40.  BD  (  1)  C  20-  H  21  77.  BD*(  1)  C  23-  C  26  0.12  1 bonds  short range
+41.  BD  (  1)  C  20-  H  22  49.  BD*(  1)  C  1-  C  2  2.56  1 bonds  short range
+41.  BD  (  1)  C  20-  H  22  52.  BD*(  1)  C  1-  C  20  0.11  1 bonds  short range
+41.  BD  (  1)  C  20-  H  22  60.  BD*(  1)  C  5-  C  6  0.11  1 bonds  short range
+41.  BD  (  1)  C  20-  H  22  64.  BD*(  1)  N  11-  C  12  0.10  1 bonds  short range
+41.  BD  (  1)  C  20-  H  22  69.  BD*(  1)  C  16-  H  17  0.15  1 bonds  short range
+41.  BD  (  1)  C  20-  H  22  71.  BD*(  1)  C  16-  H  19  0.17  1 bonds  short range
+41.  BD  (  1)  C  20-  H  22  75.  BD*(  1)  C  23-  H  24  0.17  1 bonds  short range
+41.  BD  (  1)  C  20-  H  22  76.  BD*(  1)  C  23-  H  25  3.03  1 bonds  short range
+41.  BD  (  1)  C  20-  H  22  77.  BD*(  1)  C  23-  C  26  0.18  1 bonds  short range
+42.  BD  (  1)  C  20-  C  23  49.  BD*(  1)  C  1-  C  2  0.98  1 bonds  short range
+42.  BD  (  1)  C  20-  C  23  51.  BD*(  1)  C  1-  C  6  0.23  1 bonds  short range
+42.  BD  (  1)  C  20-  C  23  52.  BD*(  1)  C  1-  C  20  0.37  1 bonds  short range
+42.  BD  (  1)  C  20-  C  23  73.  BD*(  1)  C  20-  H  22  0.13  1 bonds  short range
+42.  BD  (  1)  C  20-  C  23  75.  BD*(  1)  C  23-  H  24  0.18  1 bonds  short range
+42.  BD  (  1)  C  20-  C  23  76.  BD*(  1)  C  23-  H  25  0.12  1 bonds  short range
+42.  BD  (  1)  C  20-  C  23  77.  BD*(  1)  C  23-  C  26  0.14  1 bonds  short range
+42.  BD  (  1)  C  20-  C  23  78.  BD*(  1)  C  26-  H  27  1.74  1 bonds  short range
+42.  BD  (  1)  C  20-  C  23  79.  BD*(  1)  C  26-  O  28  0.24  1 bonds  short range
+43.  BD  (  1)  C  23-  H  24  49.  BD*(  1)  C  1-  C  2  0.14  2 bonds  short range
+43.  BD  (  1)  C  23-  H  24  72.  BD*(  1)  C  20-  H  21  2.33  2 bonds  short range
+43.  BD  (  1)  C  23-  H  24  73.  BD*(  1)  C  20-  H  22  0.18  2 bonds  short range
+43.  BD  (  1)  C  23-  H  24  79.  BD*(  1)  C  26-  O  28  1.43  2 bonds  short range
+44.  BD  (  1)  C  23-  H  25  72.  BD*(  1)  C  20-  H  21  0.23  2 bonds  short range
+44.  BD  (  1)  C  23-  H  25  73.  BD*(  1)  C  20-  H  22  2.32  2 bonds  short range
+44.  BD  (  1)  C  23-  H  25  78.  BD*(  1)  C  26-  H  27  0.10  2 bonds  short range
+44.  BD  (  1)  C  23-  H  25  79.  BD*(  1)  C  26-  O  28  1.67  2 bonds  short range
+45.  BD  (  1)  C  23-  C  26  52.  BD*(  1)  C  1-  C  20  1.81  2 bonds  short range
+45.  BD  (  1)  C  23-  C  26  72.  BD*(  1)  C  20-  H  21  0.12  2 bonds  short range
+45.  BD  (  1)  C  23-  C  26  73.  BD*(  1)  C  20-  H  22  0.16  2 bonds  short range
+45.  BD  (  1)  C  23-  C  26  77.  BD*(  1)  C  23-  C  26  0.18  2 bonds  short range
+45.  BD  (  1)  C  23-  C  26  78.  BD*(  1)  C  26-  H  27  0.12  2 bonds  short range
+45.  BD  (  1)  C  23-  C  26  79.  BD*(  1)  C  26-  O  28  0.12  2 bonds  short range
+Total σσ* short range energy: 136.32 kcal
+
+σσ* Long Range Interactions
+26.  BD  (  1)  C  4-  C  5  52.  BD*(  1)  C  1-  C  20  0.13  3 bonds  long range
+26.  BD  (  1)  C  4-  C  5  55.  BD*(  1)  C  3-  C  4  1.05  3 bonds  long range
+26.  BD  (  1)  C  4-  C  5  57.  BD*(  1)  C  3-  H  8  2.41  3 bonds  long range
+26.  BD  (  1)  C  4-  C  5  59.  BD*(  1)  C  4-  H  9  0.43  3 bonds  long range
+26.  BD  (  1)  C  4-  C  5  60.  BD*(  1)  C  5-  C  6  1.36  3 bonds  long range
+26.  BD  (  1)  C  4-  C  5  62.  BD*(  1)  C  5-  H  10  0.53  3 bonds  long range
+26.  BD  (  1)  C  4-  C  5  63.  BD*(  1)  C  6-  N  11  3.94  3 bonds  long range
+27.  BD  (  1)  C  4-  H  9  53.  BD*(  1)  C  2-  C  3  3.77  3 bonds  long range
+27.  BD  (  1)  C  4-  H  9  55.  BD*(  1)  C  3-  C  4  0.11  3 bonds  long range
+27.  BD  (  1)  C  4-  H  9  57.  BD*(  1)  C  3-  H  8  0.59  3 bonds  long range
+27.  BD  (  1)  C  4-  H  9  58.  BD*(  1)  C  4-  C  5  0.13  3 bonds  long range
+27.  BD  (  1)  C  4-  H  9  60.  BD*(  1)  C  5-  C  6  4.19  3 bonds  long range
+27.  BD  (  1)  C  4-  H  9  62.  BD*(  1)  C  5-  H  10  0.61  3 bonds  long range
+34.  BD  (  1)  C  12-  H  13  51.  BD*(  1)  C  1-  C  6  0.15  3 bonds  long range
+34.  BD  (  1)  C  12-  H  13  58.  BD*(  1)  C  4-  C  5  0.17  3 bonds  long range
+34.  BD  (  1)  C  12-  H  13  60.  BD*(  1)  C  5-  C  6  0.12  3 bonds  long range
+34.  BD  (  1)  C  12-  H  13  62.  BD*(  1)  C  5-  H  10  0.18  3 bonds  long range
+34.  BD  (  1)  C  12-  H  13  63.  BD*(  1)  C  6-  N  11  0.12  3 bonds  long range
+34.  BD  (  1)  C  12-  H  13  71.  BD*(  1)  C  16-  H  19  0.17  3 bonds  long range
+35.  BD  (  1)  C  12-  H  14  63.  BD*(  1)  C  6-  N  11  4.22  3 bonds  long range
+35.  BD  (  1)  C  12-  H  14  71.  BD*(  1)  C  16-  H  19  0.19  3 bonds  long range
+36.  BD  (  1)  C  12-  H  15  51.  BD*(  1)  C  1-  C  6  0.32  3 bonds  long range
+36.  BD  (  1)  C  12-  H  15  58.  BD*(  1)  C  4-  C  5  0.10  3 bonds  long range
+36.  BD  (  1)  C  12-  H  15  65.  BD*(  1)  N  11-  C  16  3.74  3 bonds  long range
+36.  BD  (  1)  C  12-  H  15  71.  BD*(  1)  C  16-  H  19  0.16  3 bonds  long range
+37.  BD  (  1)  C  16-  H  17  63.  BD*(  1)  C  6-  N  11  0.17  3 bonds  long range
+37.  BD  (  1)  C  16-  H  17  68.  BD*(  1)  C  12-  H  15  0.20  3 bonds  long range
+38.  BD  (  1)  C  16-  H  18  63.  BD*(  1)  C  6-  N  11  3.69  3 bonds  long range
+38.  BD  (  1)  C  16-  H  18  68.  BD*(  1)  C  12-  H  15  0.19  3 bonds  long range
+39.  BD  (  1)  C  16-  H  19  60.  BD*(  1)  C  5-  C  6  0.22  3 bonds  long range
+39.  BD  (  1)  C  16-  H  19  64.  BD*(  1)  N  11-  C  12  3.50  3 bonds  long range
+39.  BD  (  1)  C  16-  H  19  68.  BD*(  1)  C  12-  H  15  0.15  3 bonds  long range
+39.  BD  (  1)  C  16-  H  19  73.  BD*(  1)  C  20-  H  22  0.30  3 bonds  long range
+46.  BD  (  1)  C  26-  H  27  74.  BD*(  1)  C  20-  C  23  3.03  3 bonds  long range
+46.  BD  (  1)  C  26-  H  27  76.  BD*(  1)  C  23-  H  25  0.11  3 bonds  long range
+46.  BD  (  1)  C  26-  H  27  77.  BD*(  1)  C  23-  C  26  0.35  3 bonds  long range
+46.  BD  (  1)  C  26-  H  27  78.  BD*(  1)  C  26-  H  27  0.24  3 bonds  long range
+47.  BD  (  1)  C  26-  O  28  75.  BD*(  1)  C  23-  H  24  0.17  3 bonds  long range
+47.  BD  (  1)  C  26-  O  28  76.  BD*(  1)  C  23-  H  25  0.19  3 bonds  long range
+47.  BD  (  1)  C  26-  O  28  77.  BD*(  1)  C  23-  C  26  0.16  3 bonds  long range
+Total σσ* long range energy: 41.56 kcal
+
+σπ* Short Range Interactions
+32.  BD  (  1)  N  11-  C  12  61.  BD*(  2)  C  5-  C  6  0.95  2 bonds  short range
+33.  BD  (  1)  N  11-  C  16  61.  BD*(  2)  C  5-  C  6  3.37  2 bonds  short range
+40.  BD  (  1)  C  20-  H  21  50.  BD*(  2)  C  1-  C  2  0.18  1 bonds  short range
+41.  BD  (  1)  C  20-  H  22  50.  BD*(  2)  C  1-  C  2  2.60  1 bonds  short range
+42.  BD  (  1)  C  20-  C  23  50.  BD*(  2)  C  1-  C  2  3.49  1 bonds  short range
+43.  BD  (  1)  C  23-  H  24  50.  BD*(  2)  C  1-  C  2  0.14  2 bonds  short range
+43.  BD  (  1)  C  23-  H  24  80.  BD*(  2)  C  26-  O  28  6.47  2 bonds  short range
+44.  BD  (  1)  C  23-  H  25  80.  BD*(  2)  C  26-  O  28  5.61  2 bonds  short range
+45.  BD  (  1)  C  23-  C  26  50.  BD*(  2)  C  1-  C  2  0.11  2 bonds  short range
+Total σπ* short range energy: 22.92 kcal
+
+σπ* Long Range Interactions
+38.  BD  (  1)  C  16-  H  18  61.  BD*(  2)  C  5-  C  6  0.24  3 bonds  long range
+39.  BD  (  1)  C  16-  H  19  50.  BD*(  2)  C  1-  C  2  0.11  3 bonds  long range
+39.  BD  (  1)  C  16-  H  19  61.  BD*(  2)  C  5-  C  6  0.37  3 bonds  long range
+Total σπ* long range energy: 0.72 kcal
+
+ππ* Short Range Interactions
+18.  BD  (  2)  C  1-  C  2  56.  BD*(  2)  C  3-  C  4  20.19  1 bonds  short range
+18.  BD  (  2)  C  1-  C  2  61.  BD*(  2)  C  5-  C  6  20.80  1 bonds  short range
+24.  BD  (  2)  C  3-  C  4  50.  BD*(  2)  C  1-  C  2  19.89  1 bonds  short range
+24.  BD  (  2)  C  3-  C  4  61.  BD*(  2)  C  5-  C  6  19.54  1 bonds  short range
+Total ππ* short range energy: 80.42 kcal
+
+ππ* Long Range Interactions
+29.  BD  (  2)  C  5-  C  6  50.  BD*(  2)  C  1-  C  2  19.28  3 bonds  long range
+29.  BD  (  2)  C  5-  C  6  56.  BD*(  2)  C  3-  C  4  20.68  3 bonds  long range
+Total ππ* long range energy: 39.96 kcal
+

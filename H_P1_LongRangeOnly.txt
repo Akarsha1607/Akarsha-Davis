@@ -1,0 +1,61 @@
+nσ* Long Range Interactions
+15.  LP  (  1)  O  28  76.  BD*(  1)  C  23-  H  25  0.17  4 bonds  long range
+15.  LP  (  1)  O  28  77.  BD*(  1)  C  23-  C  26  1.42  4 bonds  long range
+15.  LP  (  1)  O  28  78.  BD*(  1)  C  26-  H  27  0.77  4 bonds  long range
+15.  LP  (  1)  O  28  79.  BD*(  1)  C  26-  O  28  0.22  4 bonds  long range
+16.  LP  (  2)  O  28  74.  BD*(  1)  C  20-  C  23  0.41  5 bonds  long range
+16.  LP  (  2)  O  28  77.  BD*(  1)  C  23-  C  26  21.98  5 bonds  long range
+16.  LP  (  2)  O  28  78.  BD*(  1)  C  26-  H  27  26.59  5 bonds  long range
+Total nσ* long range energy: 51.56 kcal
+
+σσ* Long Range Interactions
+26.  BD  (  1)  C  4-  C  5  52.  BD*(  1)  C  1-  C  20  0.12  3 bonds  long range
+26.  BD  (  1)  C  4-  C  5  55.  BD*(  1)  C  3-  C  4  1.00  3 bonds  long range
+26.  BD  (  1)  C  4-  C  5  57.  BD*(  1)  C  3-  H  8  2.40  3 bonds  long range
+26.  BD  (  1)  C  4-  C  5  59.  BD*(  1)  C  4-  H  9  0.42  3 bonds  long range
+26.  BD  (  1)  C  4-  C  5  60.  BD*(  1)  C  5-  C  6  1.38  3 bonds  long range
+26.  BD  (  1)  C  4-  C  5  62.  BD*(  1)  C  5-  H  10  0.50  3 bonds  long range
+26.  BD  (  1)  C  4-  C  5  63.  BD*(  1)  C  6-  N  11  4.05  3 bonds  long range
+27.  BD  (  1)  C  4-  H  9  53.  BD*(  1)  C  2-  C  3  3.79  3 bonds  long range
+27.  BD  (  1)  C  4-  H  9  55.  BD*(  1)  C  3-  C  4  0.11  3 bonds  long range
+27.  BD  (  1)  C  4-  H  9  57.  BD*(  1)  C  3-  H  8  0.59  3 bonds  long range
+27.  BD  (  1)  C  4-  H  9  58.  BD*(  1)  C  4-  C  5  0.13  3 bonds  long range
+27.  BD  (  1)  C  4-  H  9  60.  BD*(  1)  C  5-  C  6  4.16  3 bonds  long range
+27.  BD  (  1)  C  4-  H  9  62.  BD*(  1)  C  5-  H  10  0.60  3 bonds  long range
+34.  BD  (  1)  C  12-  H  13  51.  BD*(  1)  C  1-  C  6  0.14  3 bonds  long range
+34.  BD  (  1)  C  12-  H  13  58.  BD*(  1)  C  4-  C  5  0.15  3 bonds  long range
+34.  BD  (  1)  C  12-  H  13  60.  BD*(  1)  C  5-  C  6  0.13  3 bonds  long range
+34.  BD  (  1)  C  12-  H  13  62.  BD*(  1)  C  5-  H  10  0.15  3 bonds  long range
+34.  BD  (  1)  C  12-  H  13  63.  BD*(  1)  C  6-  N  11  0.14  3 bonds  long range
+34.  BD  (  1)  C  12-  H  13  69.  BD*(  1)  C  16-  H  17  0.16  3 bonds  long range
+35.  BD  (  1)  C  12-  H  14  63.  BD*(  1)  C  6-  N  11  4.40  3 bonds  long range
+35.  BD  (  1)  C  12-  H  14  69.  BD*(  1)  C  16-  H  17  0.17  3 bonds  long range
+36.  BD  (  1)  C  12-  H  15  51.  BD*(  1)  C  1-  C  6  0.30  3 bonds  long range
+36.  BD  (  1)  C  12-  H  15  65.  BD*(  1)  N  11-  C  16  4.07  3 bonds  long range
+36.  BD  (  1)  C  12-  H  15  69.  BD*(  1)  C  16-  H  17  0.16  3 bonds  long range
+37.  BD  (  1)  C  16-  H  17  60.  BD*(  1)  C  5-  C  6  0.19  3 bonds  long range
+37.  BD  (  1)  C  16-  H  17  64.  BD*(  1)  N  11-  C  12  3.72  3 bonds  long range
+37.  BD  (  1)  C  16-  H  17  68.  BD*(  1)  C  12-  H  15  0.14  3 bonds  long range
+37.  BD  (  1)  C  16-  H  17  72.  BD*(  1)  C  20-  H  21  0.22  3 bonds  long range
+38.  BD  (  1)  C  16-  H  18  63.  BD*(  1)  C  6-  N  11  3.95  3 bonds  long range
+38.  BD  (  1)  C  16-  H  18  68.  BD*(  1)  C  12-  H  15  0.18  3 bonds  long range
+39.  BD  (  1)  C  16-  H  19  63.  BD*(  1)  C  6-  N  11  0.14  3 bonds  long range
+39.  BD  (  1)  C  16-  H  19  68.  BD*(  1)  C  12-  H  15  0.16  3 bonds  long range
+46.  BD  (  1)  C  26-  H  27  63.  BD*(  1)  C  6-  N  11  0.11  3 bonds  long range
+46.  BD  (  1)  C  26-  H  27  71.  BD*(  1)  C  16-  H  19  0.12  3 bonds  long range
+46.  BD  (  1)  C  26-  H  27  76.  BD*(  1)  C  23-  H  25  2.20  3 bonds  long range
+46.  BD  (  1)  C  26-  H  27  77.  BD*(  1)  C  23-  C  26  0.48  3 bonds  long range
+46.  BD  (  1)  C  26-  H  27  78.  BD*(  1)  C  26-  H  27  0.30  3 bonds  long range
+47.  BD  (  1)  C  26-  O  28  74.  BD*(  1)  C  20-  C  23  0.43  3 bonds  long range
+Total σσ* long range energy: 41.56 kcal
+
+σπ* Long Range Interactions
+37.  BD  (  1)  C  16-  H  17  61.  BD*(  2)  C  5-  C  6  0.36  3 bonds  long range
+38.  BD  (  1)  C  16-  H  18  61.  BD*(  2)  C  5-  C  6  0.25  3 bonds  long range
+Total σπ* long range energy: 0.61 kcal
+
+ππ* Long Range Interactions
+29.  BD  (  2)  C  5-  C  6  50.  BD*(  2)  C  1-  C  2  19.77  3 bonds  long range
+29.  BD  (  2)  C  5-  C  6  56.  BD*(  2)  C  3-  C  4  20.69  3 bonds  long range
+Total ππ* long range energy: 40.46 kcal
+
