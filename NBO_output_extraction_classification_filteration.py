@@ -123,13 +123,16 @@ def find_bond_path_with_distance(connectivity, start_atom, target_atom):
 
 
 def extract_atoms_from_line(line):
-    match = re.search(r'\)\s+([A-Z]+)\s+(\d+)\s+.*BD\*\(\d\)\s+[A-Z]+\s+(\d+)-[A-Z]+\s+(\d+)', line)
+    match = re.search(r'\)\s+([A-Z]+)\s+(\d+)\s+.*BD\*\(\d\)\s+([A-Z]+)\s+(\d+)-([A-Z]+)\s+(\d+)', line)
     if match:
-        return match.group(2), match.group(3)
-    else:
-        digits = re.findall(r'\d+', line)
-        if len(digits) >= 4:
-            return digits[1], digits[2]
+        return match.group(2), match.group(6)
+    #Alternate pattern incase first regrex fails
+    fallback = re.findall(r'([A-Z])\s*(\d+)', line)
+    if len(fallback) >= 2:
+        return fallback[0][1], fallback[1][1]
+    digits = re.findall(r'\d+', line)
+    if len(digits) >= 4:
+        return digits[2], digits[4]  #to skip LP and BD indices
     return None, None
 
 #Classify interactions with bond range
