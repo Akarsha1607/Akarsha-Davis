@@ -54,32 +54,41 @@ bond_types = {
 #Classify interactions
 def classify_interactions(perturbation_data, log_file):
     classified_data = {
-        "nσ": [], "nσ*": [], "nπ": [], "nπ*": [],
-        "σσ*": [], "σπ": [], "σπ*": [], "ππ*": []
+        "nσ*": [], "nπ*": [], "σσ*": [], "σπ*": [], "ππ*": []
     }
     energy_totals = {}
 
     for line in perturbation_data:
-        words = line.split()
-        if len(words) < 5:
+        if "RY" in line or not line.strip():
             continue
-        donors = []
-        for key in bond_types:
-            if key.replace(" ", "") in line.replace(" ", ""):
-                donors.append(bond_types[key])
-        for donor in donors:
-            for acceptor in donors:
-                if donor != acceptor:
-                    interaction = donor + acceptor
-                    if interaction in classified_data:
-                        try:
-                            energy = float(words[-3]) 
-                        except:
-                            energy = 0.0
-                        classified_data[interaction].append((line, energy))
-                        if interaction not in energy_totals:
-                            energy_totals[interaction] = 0.0
-                        energy_totals[interaction] += energy
+
+        if "LP" in line:
+            donor = "n"
+        elif "BD ( 1)" in line:
+            donor = "σ"
+        elif "BD ( 2)" in line:
+            donor = "π"
+        else:
+            continue
+
+        if "BD*( 1)" in line:
+            acceptor = "σ*"
+        elif "BD*( 2)" in line:
+            acceptor = "π*"
+        else:
+            continue
+
+        interaction = donor + acceptor
+        if interaction not in classified_data:
+            continue
+
+        try:
+            energy = float(line.strip().split()[-3])
+        except Exception:
+            energy = 0.0
+
+        classified_data[interaction].append((line.strip(), energy))
+        energy_totals[interaction] = energy_totals.get(interaction, 0.0) + energy
 
     classification_file = log_file.replace(".log", "_Classification.txt")
     with open(classification_file, "w", encoding="utf-8") as out_class:
@@ -88,10 +97,11 @@ def classify_interactions(perturbation_data, log_file):
                 out_class.write(f"{category} Interactions\n")
                 for entry, energy in items:
                     out_class.write(f"{entry}\n")
-                out_class.write(f"Total {category} energy: {energy_totals.get(category, 0.0):.2f} kcal\n\n")
+                out_class.write(f"Total {category} energy: {energy_totals[category]:.2f} kcal\n\n")
 
     print(f"Classified interactions saved to {classification_file}")
-    return classified_data 
+    return classified_data
+
 
 #Read PDB connectivity
 def read_pdb_connectivity(pdb_file):
@@ -115,7 +125,7 @@ def find_bond_path_with_distance(connectivity, start_atom, target_atom):
     while queue:
         current_atom, path = queue.popleft()
         if current_atom == target_atom:
-            return len(path) - 1, path  # Return the bond count and path
+            return len(path) - 1, path
         visited.add(current_atom)
         for neighbor in connectivity.get(current_atom, []):
             if neighbor not in visited:
@@ -123,16 +133,12 @@ def find_bond_path_with_distance(connectivity, start_atom, target_atom):
 
 
 def extract_atoms_from_line(line):
-    match = re.search(r'\)\s+([A-Z]+)\s+(\d+)\s+.*BD\*\(\d\)\s+([A-Z]+)\s+(\d+)-([A-Z]+)\s+(\d+)', line)
-    if match:
-        return match.group(2), match.group(6)
-    #Alternate pattern incase first regrex fails
-    fallback = re.findall(r'([A-Z])\s*(\d+)', line)
-    if len(fallback) >= 2:
-        return fallback[0][1], fallback[1][1]
+    atoms = re.findall(r'([A-Z]{1,2})\s+(\d+)', line)
+    if len(atoms) >= 2:
+        return atoms[0][1], atoms[-1][1]
     digits = re.findall(r'\d+', line)
     if len(digits) >= 4:
-        return digits[2], digits[4]  #to skip LP and BD indices
+        return digits[2], digits[4]
     return None, None
 
 #Classify interactions with bond range
@@ -151,7 +157,7 @@ def classify_interactions_with_bond_range(classified_data, connectivity, log_fil
                     bond_count, path = find_bond_path_with_distance(connectivity, atom1, atom2)
                     if bond_count == -1:
                         continue
-                    
+                                        
                     range_type = "short range" if bond_count < 3 else "long range"
                     clean_line = "  ".join(line.split()[:-2]) 
                     
@@ -201,18 +207,11 @@ def classify_long_range_interactions_only(classified_data, connectivity, log_fil
 
     print(f"Long-range only classification saved to {new_file}")
 
-
 #input
 log_file = input("Enter the path to the log file: ").strip()
 pdb_file = input("Enter the path to the PDB file: ").strip()
 
-#input for atoms to calculate bond separation
-atom1 = input("Enter the first atom number: ").strip()
-atom2 = input("Enter the second atom number: ").strip()
 connectivity = read_pdb_connectivity(pdb_file)
-bond_count, path = find_bond_path_with_distance(connectivity, atom1, atom2)
-print(f"The number of bonds separating atom {atom1} and atom {atom2} is: {bond_count}")
-print(f"Shortest bond path from atom {atom1} to {atom2}: {' -> '.join(path)}")
 
 perturbation_data = extract_perturbation(log_file)
 contribution_data = extract_contribution(log_file)
